@@ -1,5 +1,12 @@
-NPS Setup/Management
-Adding NPS
+---
+layout: default
+title: NPS Setup/Management
+---
+## NPS Setup/Management
+
+<ol> 
+  ### Adding NPS
+  
 Concept
 SMF is not storing root/nz passwords anywhere. Root password is being used only during setup.
 SMF is creating smartadm users (shell and database) on every IBM Pure Data for Analytics appliance for which it is connected to. 
