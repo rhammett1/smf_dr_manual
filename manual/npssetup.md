@@ -6,19 +6,21 @@ title: NPS Setup/Management
 ## NPS Setup/Management
 
 <ol> 
-###Adding NPS
+  <li><h3>Adding NPS</h3></li>
+  <ul>
   
-Concept
-<ul>
- <li>SMF does not store root/nz passwords anywhere. Root password is used only during setup.</li>
-<li>SMF creates users (shell and database) on every IBM Pure Data for Analytics (Netezza) appliance that it is connected to. </li>
-<li>Shell users do not have permissions to modify data in /nz directory. </li>
-<li>Shell users have mount/umount options granted. </li>
+  <li> Concept</li>
+  <ul>
+      <li>SMF does not store root/nz passwords anywhere. Root password is used only during setup.</li>
+      <li>SMF creates users (shell and database) on every IBM Pure Data for Analytics (Netezza) appliance that it is connected to. </li>
+      <li>Shell users do not have permissions to modify data in /nz directory. </li>
+      <li>Shell users have mount/umount options granted. </li>
   
-NOTE: This option can be manually revoked by editing /etc/sudoers. SMF does not have the option to read /etc/sudoers and as such presence of this entry is not validated but is assumed present. During backup/restore option if RO (ready-Only) mode selection is set scripts will show errors and warning messages will appear in system logs.
+NOTE: This option can be manually revoked by editing /etc/sudoers. SMF does not have the option to read /etc/sudoers and as such    presence of this entry is not validated but is assumed present. During backup/restore option if RO (ready-Only) mode selection is set scripts will show errors and warning messages will appear in system logs.
 
 <li>Smartadm database user has all administrative privileges. </li>
 
+</ul>
 </ul>
 </ol>
 
