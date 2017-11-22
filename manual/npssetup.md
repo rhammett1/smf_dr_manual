@@ -21,10 +21,9 @@ NOTE: This option can be manually revoked by editing /etc/sudoers. SMF does not 
   <li>Smartadm database user has all administrative privileges. </li>
 
   </ul>
-  </ul>
 
   <li>Commands</li>
-</ul>
+<ul>
 <li>UI Commands</li>
 Through UI (automatically opened when logged in as smartadm user): 7 (NPS management) -> NPS setup
 Script asks for following details:
@@ -35,6 +34,7 @@ Script asks for following details:
 NOTE: In case DR functionality is desired SMF provides feature to synchronize data between SMF nodes. As such preferable option is to have one SMF per data centre / shared storage group(s). 
 <li>In case SMF DR data Synchronization will be used – set up sufficient masters for each NPS</li>
  
+</ul>
 </ul>
 </ol>
 
