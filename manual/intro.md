@@ -1,5 +1,4 @@
 ## Introduction
-<a name="Intro"></a>
 **Smart Management Framework (SMF)** has been specifically designed to automate processes that improve the performance, availability, recoverability, and security of one or more of IBM®’s Pure Data™ for Analytics (aka Netezza) appliances.
 It does this by providing parameterised and dynamically maintained metadata driven templates for the rapid implementation of best practise functionality in the following areas:
 * Database backup and replication management
@@ -10,7 +9,6 @@ It does this by providing parameterised and dynamically maintained metadata driv
 * Change management and version control
 * Configurable scheduling and auditable logging of all the above activities
 
-<a name="backuprepfeat"></a>
 ## Backup/Replication Features
 * Works with any kind of storage media (including NFS, Spectrum Scale, SAN/NAS, etc.)
 * Bi-directional, multi-master in nature (from anywhere to anywhere, including multiple targets replicated from the same backup source, or the restoration target being on the same physical appliance as the backup source itself)
