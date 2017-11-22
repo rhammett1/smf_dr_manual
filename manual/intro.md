@@ -17,7 +17,8 @@ It does this by providing parameterised and dynamically maintained metadata driv
 * backup sets supported per appliance Can backup/restore subsets of tables within a database (and even subsets of rows within a table)
 * Ideal for Disaster Recovery, as well as Development/Test database population using sampled referentially intact subsets of production data
 
-## LDAP Synchronisation Features 
+ <div id="ldapsync"></div>
+ ## LDAP Synchronisation Features 
 * Dynamic creation/dropping of database users and groups based on synchronised LDAP master data
 * Automatic addition/removal of users to/from groups, as well as granting/revoking of permissions to/from groups
 
