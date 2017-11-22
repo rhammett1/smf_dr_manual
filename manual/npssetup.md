@@ -21,6 +21,7 @@ NOTE: This option can be manually revoked by editing /etc/sudoers. SMF does not 
   <li>Smartadm database user has all administrative privileges. </li>
 
   </ul>
+  </ul>
 
   <li>Commands</li>
 </ul>
