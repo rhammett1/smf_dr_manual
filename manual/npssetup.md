@@ -25,6 +25,7 @@ NOTE: This option can be manually revoked by editing /etc/sudoers. SMF does not 
   <li>Commands</li>
 <ul>
 <li>UI Commands</li>
+<ul>
 Through UI (automatically opened when logged in as smartadm user): 7 (NPS management) -> NPS setup
 Script asks for following details:
  <li>IP/FQDN – IP / FQDN of IBM PureData for Analytics Appliance  </li>
@@ -33,7 +34,7 @@ Script asks for following details:
  MIGR ID confirmation – if only one SMF host is present in data center confirm by enterting ‘y’
 NOTE: In case DR functionality is desired SMF provides feature to synchronize data between SMF nodes. As such preferable option is to have one SMF per data centre / shared storage group(s). 
 <li>In case SMF DR data Synchronization will be used – set up sufficient masters for each NPS</li>
- 
+</ul>
 </ul>
 </ul>
 </ol>
