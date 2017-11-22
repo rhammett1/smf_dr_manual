@@ -1,6 +1,3 @@
----
-layout: default
----
 **Smart Management Framework (SMF)** has been specifically designed to automate processes that improve the performance, availability, recoverability, and security of one or more of IBM®’s Pure Data™ for Analytics (aka Netezza) appliances.
 It does this by providing parameterised and dynamically maintained metadata driven templates for the rapid implementation of best practise functionality in the following areas:
 * Database backup and replication management
