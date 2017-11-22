@@ -18,23 +18,28 @@ title: NPS Setup/Management
   
 NOTE: This option can be manually revoked by editing /etc/sudoers. SMF does not have the option to read /etc/sudoers and as such    presence of this entry is not validated but is assumed present. During backup/restore option if RO (ready-Only) mode selection is set scripts will show errors and warning messages will appear in system logs.
 
-<li>Smartadm database user has all administrative privileges. </li>
+  <li>Smartadm database user has all administrative privileges. </li>
 
+  </ul>
+
+  <li>Commands</li>
 </ul>
+<li>UI Commands</li>
+Through UI (automatically opened when logged in as smartadm user): 7 (NPS management) -> NPS setup
+Script asks for following details:
+ <li>IP/FQDN – IP / FQDN of IBM PureData for Analytics Appliance  </li>
+ <li>root password for currently active host </li>
+ <li>Machine alias – it will be displayed for future reference (can be modified afterwards)</li>
+ MIGR ID confirmation – if only one SMF host is present in data center confirm by enterting ‘y’
+NOTE: In case DR functionality is desired SMF provides feature to synchronize data between SMF nodes. As such preferable option is to have one SMF per data centre / shared storage group(s). 
+<li>In case SMF DR data Synchronization will be used – set up sufficient masters for each NPS</li>
+ 
 </ul>
 </ol>
 
-Commands
-UI 
-Through UI (automatically opened when logged in as smartadm user): 7 (NPS management) -> NPS setup
 
-Script ask for following details:
-IP/FQDN – IP / FQDN of IBM PureData for Analytics Appliance 
-root password for currently active host 
-Machine alias – it will be displayed for future reference (can be modified afterwards)
-MIGR ID confirmation – if only one SMF host is present in data center confirm by enterting ‘y’
-NOTE: In case DR functionality is desired SMF provide feature to synchronize data between SMF nodes. As such – preferable option is to have one SMF per data center / shared storage group(s). 
-In case SMF DR data Synchronization will be used – set up sufficient master for each NPS
+
+
 SMF Shell 
 Command line option is using same syntax as UI. To launch NPS setup:
 /opt/SmartMF/scripts/inits/setupnps.sh
