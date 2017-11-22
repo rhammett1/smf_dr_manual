@@ -20,10 +20,12 @@ It does this by providing parameterised and dynamically maintained metadata driv
 
  <div id="ldapsync"></div>
  
- ## LDAP Synchronisation Features 
+## LDAP Synchronisation Features 
 * Dynamic creation/dropping of database users and groups based on synchronised LDAP master data
 * Automatic addition/removal of users to/from groups, as well as granting/revoking of permissions to/from groups
 
+ <div id="perftun"></div>
+ 
 ## Performance Tuning Features 
 * Automatically and regularly identifies relatively poorly performing query workloads based on configurable settings
 such as query frequency, queue time, latency, and throughput
@@ -32,6 +34,8 @@ such as query frequency, queue time, latency, and throughput
 * Dynamically generates code to implement accepted recommendations
 * Monitors and quantifies the cumulative benefit of implemented recommendations
 
+ <div id="advsec"></div>
+ 
 ## Advanced Security Features
 * Provides a column-level access control security model for both users and groups
 * Dynamically creates views that automatically either reveal or obscure secure column values when queried, depending on the user performing the query, the permission groups they belong to, and the contents of the column-level access control security model
@@ -41,6 +45,8 @@ such as query frequency, queue time, latency, and throughput
 * Dynamically builds row secure tables, and applies security labels to their contents, based on parameter settings and
 configurable matching rules
 
+ <div id="housek"></div>
+ 
 ## Housekeeping Features
 * Dynamically generates, schedules, executes, and logs a variety of system management tasks essential for consistently optimal query performance
 * GROOMS versions of altered tables, as well as changed/deleted rows in the most performant way. Automatically detects when RECORDS ALL is needed e.g. as a result of a changed ORGANIZE ON setting
