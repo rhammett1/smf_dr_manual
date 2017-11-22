@@ -9,7 +9,8 @@ It does this by providing parameterised and dynamically maintained metadata driv
 * Change management and version control
 * Configurable scheduling and auditable logging of all the above activities
 
- <div id="backuprepfeat"></div>
+<div id="backuprepfeat"></div>
+ 
 ## Backup/Replication Features
 * Works with any kind of storage media (including NFS, Spectrum Scale, SAN/NAS, etc.)
 * Bi-directional, multi-master in nature (from anywhere to anywhere, including multiple targets replicated from the same backup source, or the restoration target being on the same physical appliance as the backup source itself)
@@ -18,6 +19,7 @@ It does this by providing parameterised and dynamically maintained metadata driv
 * Ideal for Disaster Recovery, as well as Development/Test database population using sampled referentially intact subsets of production data
 
  <div id="ldapsync"></div>
+ 
  ## LDAP Synchronisation Features 
 * Dynamic creation/dropping of database users and groups based on synchronised LDAP master data
 * Automatic addition/removal of users to/from groups, as well as granting/revoking of permissions to/from groups
