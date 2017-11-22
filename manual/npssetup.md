@@ -6,7 +6,7 @@ title: NPS Setup/Management
 ## NPS Setup/Management
 
 <ol> 
-  ### Adding NPS
+###Adding NPS
   
 Concept
 <ul>
@@ -20,6 +20,7 @@ NOTE: This option can be manually revoked by editing /etc/sudoers. SMF does not 
 <li>Smartadm database user has all administrative privileges. </li>
 
 </ul>
+</ol>
 
 Commands
 UI 
