@@ -6,7 +6,8 @@ title: NPS Setup/Management
 ## NPS Setup/Management
 
 <ol> 
-  <li><h3>Adding NPS</h3></li>  
+  <li><h3>Adding NPS</h3></li> 
+  <ul>
   <li> <b>Concept</b></li>
   <ul>
       <li>SMF does not store root/nz passwords anywhere. Root password is used only during setup.</li>
@@ -46,6 +47,7 @@ NOTE: This option can be manually revoked by editing /etc/sudoers. SMF does not 
   <li>Each SMF function reloads its requisite metadata on the respective NPS appliance.  
   <li>Each function reloads scripts one NPS at a time (except columns metadata reload). The input attribute is internal appliance ID (further referenced as NPSID)
   NOTE: Each script reloads its requisite metadata before running. Metadata reload options do not need to be invoked manually.
+   </ul>
    </ul>
 <ol>
 
