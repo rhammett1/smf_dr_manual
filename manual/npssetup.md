@@ -37,7 +37,7 @@ NOTE: In case DR functionality is desired SMF provides feature to synchronize da
 <li>In case SMF DR data Synchronization will be used – set up sufficient masters for each NPS</li>
 </ul>
 <li>SMF Shell</li>
-<ul> <li>Command line option uses the syntax as the UI. To launch NPS setup:/opt/SmartMF/scripts/inits/setupnps.sh</li>
+<ul> <li>Command line option uses the syntax as the UI. To launch NPS setup: /opt/SmartMF/scripts/inits/setupnps.sh</li>
   </ul>
 </ul>
 </ul>
