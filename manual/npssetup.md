@@ -32,7 +32,9 @@ NOTE: This option can be manually revoked by editing /etc/sudoers. SMF does not 
      <li>root password for currently active host </li>
      <li>Machine alias – it will be displayed for future reference (can be modified afterwards)</li>
      MIGR ID confirmation – if only one SMF host is present in data center confirm by enterting ‘y’
-    <p> NOTE: In case DR functionality is desired SMF provides feature to synchronize data between SMF nodes. As such preferable option is to have one SMF per data centre / shared storage group(s). </p>
+  
+ NOTE: In case DR functionality is desired SMF provides feature to synchronize data between SMF nodes. As such preferable option is to have one SMF per data centre / shared storage group(s). 
+ 
      <li>In case SMF DR data Synchronization will be used – set up sufficient masters for each NPS</li>
   </ul>
 <li>SMF Shell</li>
