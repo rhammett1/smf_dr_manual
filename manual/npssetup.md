@@ -39,6 +39,7 @@ NOTE: This option can be manually revoked by editing /etc/sudoers. SMF does not 
 <ul> <li>Command line option uses the syntax as the UI. To launch NPS setup run: /opt/SmartMF/scripts/inits/setupnps.sh</li>
   </ul>
 </ul>
+</ul>
  <li><h3>Updating NPS</h3></li>
   <li> <b>Concept</b></li>
   <ul>
