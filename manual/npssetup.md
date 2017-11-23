@@ -21,7 +21,7 @@ NOTE: This option can be manually revoked by editing /etc/sudoers. SMF does not 
 
   </ul>
 
-  <li>Commands</li>
+  <li><b>Commands</b></li>
   <ul>
   <li>UI Commands</li>
 
