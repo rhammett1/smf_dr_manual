@@ -25,8 +25,8 @@ NOTE: This option can be manually revoked by editing /etc/sudoers. SMF does not 
   <ul>
   <li>UI Commands</li>
 
-  Through UI (automatically opened when logged in as smartadm user): <br> 
-  Menu Item 7 (NPS setup) -> Menu Item 3 (Add NPS)
+  Through UI (automatically opened when logged in as smartadm user): <br> <br>
+  Menu Item 7 (NPS setup) -> Menu Item 3 (Add NPS)<br><br>
   
   The script asks for following details:
   <ul>
