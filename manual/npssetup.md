@@ -25,7 +25,9 @@ NOTE: This option can be manually revoked by editing /etc/sudoers. SMF does not 
   <ul>
   <li>UI Commands</li>
 
-  Through UI (automatically opened when logged in as smartadm user): Menu Item 7 (NPS setup) -> Menu Item 3 (Add NPS)
+  Through UI (automatically opened when logged in as smartadm user): <br> 
+  Menu Item 7 (NPS setup) -> Menu Item 3 (Add NPS)
+  
   The script asks for following details:
   <ul>
     <li>IP/FQDN – IP / FQDN of IBM PureData for Analytics Appliance  </li>
