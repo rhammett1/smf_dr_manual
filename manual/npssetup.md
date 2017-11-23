@@ -25,9 +25,10 @@ NOTE: This option can be manually revoked by editing /etc/sudoers. SMF does not 
   <li>Commands</li>
 <ul>
 <li>UI Commands</li>
-<ul>
+
 Through UI (automatically opened when logged in as smartadm user): 7 (NPS management) -> NPS setup
 Script asks for following details:
+<ul>
  <li>IP/FQDN – IP / FQDN of IBM PureData for Analytics Appliance  </li>
  <li>root password for currently active host </li>
  <li>Machine alias – it will be displayed for future reference (can be modified afterwards)</li>
@@ -35,6 +36,9 @@ Script asks for following details:
 NOTE: In case DR functionality is desired SMF provides feature to synchronize data between SMF nodes. As such preferable option is to have one SMF per data centre / shared storage group(s). 
 <li>In case SMF DR data Synchronization will be used – set up sufficient masters for each NPS</li>
 </ul>
+<li>SMF Shell</li>
+<ul> <li>Command line option uses the syntax as the UI. To launch NPS setup:/opt/SmartMF/scripts/inits/setupnps.sh</li>
+  </ul>
 </ul>
 </ul>
 </ol>
@@ -43,8 +47,7 @@ NOTE: In case DR functionality is desired SMF provides feature to synchronize da
 
 
 SMF Shell 
-Command line option is using same syntax as UI. To launch NPS setup:
-/opt/SmartMF/scripts/inits/setupnps.sh
+
 
 Updating NPS
 Concept
