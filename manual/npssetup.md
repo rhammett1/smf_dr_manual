@@ -56,11 +56,15 @@ NOTE: This option can be manually revoked by editing /etc/sudoers. SMF does not 
    </ul>
    </ul>
    </ul>
-<li><h3>General System Information (schema support, NPS release, authentication)</h3></li> 
-<br> To see 
-<ol>
+<li><h3>Reloading SMF Metadata</h3></li> 
+<br> NPS metadata can be reloaded via the UI: 
+<br><br>Menu Item 6 (NPS Setup) -> Menu Item 2 (Reload NPS Metadata)
+
+
 <img style="float: right;" src="/manual/images/edit_nps_menu.jpg">
 
+</ol>
+<br>
 <li><h3>Maintaining System Information</h3></li>
 UI
 Main UI: 6 -> NPS UI: 2 -> Select NPSID -> Option: 1
