@@ -59,6 +59,7 @@ NOTE: This option can be manually revoked by editing /etc/sudoers. SMF does not 
 <li><h3>General System Information (schema support, NPS release, authentication)</h3></li> 
 <br> To see 
 <ol>
+<img style="float: right;" src="/manual/images/edit_nps_menu.jpg">
 
 <li><h3>Maintaining System Information</h3></li>
 UI
