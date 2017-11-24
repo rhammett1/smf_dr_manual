@@ -26,7 +26,7 @@ NOTE: This option can be manually revoked by editing /etc/sudoers. SMF does not 
   <li>UI Commands</li>
 
   Through UI (automatically opened when logged in as smartadm user): <br> <br>
-  Menu Item 7 (NPS setup) -> Menu Item 3 (Add NPS)<br><br>
+  <b>Menu Item 7 (NPS setup) -> Menu Item 3 (Add NPS)</b><br><br>
   
   The script asks for following details:
   <ul>
@@ -37,8 +37,8 @@ NOTE: This option can be manually revoked by editing /etc/sudoers. SMF does not 
   
  <br>NOTE: In case DR functionality is desired SMF provides feature to synchronize data between SMF nodes. As such preferable option is to have one SMF per data centre / shared storage group(s). 
  
-     <li>In case SMF DR data Synchronization will be used – set up sufficient masters for each NPS</li>
-  </ul>
+     <li>In case SMF DR data Synchronization will be used – set up sufficient masters for each NPS</li> 
+  </ul><br>
 <li>SMF Shell</li>
 <ul> <li>Command line option uses the syntax as the UI. To launch NPS setup run: /opt/SmartMF/scripts/inits/setupnps.sh</li>
   </ul>
@@ -48,14 +48,16 @@ NOTE: This option can be manually revoked by editing /etc/sudoers. SMF does not 
  <ul>
   <li> <b>Concept</b></li>
   <ul>
-  <li>SMF stores all metadata in its internal database. 
-  <li>Each object type has its own unique object type id across all available Netezza appliances. 
-  <li>Each SMF function reloads its requisite metadata on the respective NPS appliance.  
-  <li>Each function reloads scripts one NPS at a time (except columns metadata reload). The input attribute is internal appliance ID (further referenced as NPSID)
-  NOTE: Each script reloads its requisite metadata before running. Metadata reload options do not need to be invoked manually.
+    <li>SMF stores all metadata in its internal database.</li>
+  <li>Each object type has its own unique object type id across all available Netezza appliances. </li>
+  <li>Each SMF function reloads its requisite metadata on the respective NPS appliance.  </li>
+  <li>Each function reloads scripts one NPS at a time (except columns metadata reload). The input attribute is internal appliance ID (further referenced as NPSID)</li>
+  <br> NOTE: Each script reloads its requisite metadata before running. Metadata reload options do not need to be invoked manually.
    </ul>
    </ul>
    </ul>
+<li><h3>General System Information (schema support, NPS release, authentication)</h3></li> 
+<br> To see 
 <ol>
 
 General system information (schema support, NPS release, authentication)
