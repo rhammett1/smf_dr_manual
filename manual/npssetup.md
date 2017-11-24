@@ -60,7 +60,7 @@ NOTE: This option can be manually revoked by editing /etc/sudoers. SMF does not 
 <br> To see 
 <ol>
 
-General system information (schema support, NPS release, authentication)
+<li><h3>Maintaining System Information</h3></li>
 UI
 Main UI: 6 -> NPS UI: 2 -> Select NPSID -> Option: 1
 SMF Shell
