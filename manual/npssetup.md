@@ -60,134 +60,13 @@ NOTE: This option can be manually revoked by editing /etc/sudoers. SMF does not 
 <br> NPS metadata can be reloaded via the UI: 
 <br><br>Menu Item 6 (NPS Setup) -> Menu Item 2 (Reload NPS Metadata)
 
-
-<img style="float: right;" src="/manual/images/edit_nps_menu.jpg">
-
-</ol>
+<p align="center">
+<img style="float: center;" src="/manual/images/edit_nps_menu.jpg">
+</p>
 <br>
-<li><h3>Maintaining System Information</h3></li>
-UI
-Main UI: 6 -> NPS UI: 2 -> Select NPSID -> Option: 1
-SMF Shell
-/opt/SmartMF/scripts/machines/update_dbo_nzrev.sh NPSID
-SMF Table
-machines_history
-Update IP
-UI
-Main UI: 6 -> NPS UI: 2 -> Select NPSID -> Option: 2 -> enter new IP
-SMF Shell
-/opt/SmartMF/scripts/machines/update_IP.sh NPSID
-SMF Table
-machines_history
-
-Time zone
-UI
-Main UI: 6 -> NPS UI: 2 -> Select NPSID -> Option: 3
-SMF Shell
-/opt/SmartMF/scripts/machines/update_tzoffset.sh NPSID
-SMF Table
-machines_history
 
 
-Databases 
-UI
-Main UI: 6 -> NPS UI: 2 -> Select NPSID -> Option: 4
-SMF Shell
-/opt/SmartMF/scripts/databases/update_nps_datadabases.sh NPSID
-SMF Table
-databases – all databases information
-active_databases – general information about active databases
 
-Schemas
-UI
-Main UI: 6 -> NPS UI: 2 -> Select NPSID -> Option: 5
-SMF Shell
-/opt/SmartMF/scripts/databases/load_dbs_schemas.sh NPSID
-SMF Table
-dbschema
-
-Tables
-UI
-Main UI: 6 -> NPS UI: 2 -> Select NPSID -> Option: 6
-SMF Shell
-/opt/SmartMF/scripts/databases/load_dbs_tables.sh NPSID
-SMF Table
-Dbtables
-
-Columns
-Columns metadata reload differs from all other functionalities as to extract this information metadata needs to be pulled directly from IBM PureData for analytics database. 
-UI
-Main UI: 6 -> NPS UI: 2 -> Select NPSID -> Option: 7 -> Select DB ID or type ALL/all (for all DBs rescan)
-SMF Shell
-/opt/SmartMF/scripts/databases/load_dbs_columns.sh DBID
-SMF Table
-dbcolumns – contains all information about all columns (includes all NPS specific metadata) in reloaded databases
-
-Users
-UI
-Main UI: 6 -> NPS UI: 2 -> Select NPSID -> Option: 8
-
-SMF Shell
-/opt/SmartMF/scripts/LDAP/load_db_users.sh NPSID
-SMF Table
-Users
-
-Groups
-UI
-Main UI: 6 -> NPS UI: 2 -> Select NPSID -> Option: 9
-SMF Shell
-/opt/SmartMF/scripts/LDAP/load_db_groups.sh NPSID
-SMF Table
-usergroups
-
-Users/Groups allocation
-UI
-Main UI: 6 -> NPS UI: 2 -> Select NPSID -> Option: 10
-SMF Shell
-/opt/SmartMF/scripts/LDAP/load_db_usersgroups.sh NPSID
-SMF Table
-Useringroups
-
-All user/group/allocation informations
-UI
-Main UI: 6 -> NPS UI: 2 -> Select NPSID -> Option: 11
-SMF Shell
-/opt/SmartMF/scripts/LDAP/load_db_usersgroups.sh NPSID
-SMF Table
-useringroups
-
-Non-admin permissions
-UI
-Main UI: 6 -> NPS UI: 2 -> Select NPSID -> Option: 12
-SMF Shell
-/opt/SmartMF/scripts/LDAP/load_db_permissions.sh NPSID
-SMF Table
-permission_non_admin
-Admin permissions
-UI
-Main UI: 6 -> NPS UI: 2 -> Select NPSID -> Option: 13
-SMF Shell
-/opt/SmartMF/scripts/LDAP/load_db_permissions_admin.sh NPSID
-SMF Table
-permission_admin
-Storage
-UI
-Main UI: 6 -> NPS UI: 2 -> Select NPSID -> Option: 14
-SMF Shell
-/opt/SmartMF/scripts/storage/reload_nps_storage.sh NPSID
-SMF Table
-storage
-Update Backup host name
-UI
-Main UI: 6 -> NPS UI: 2 -> Select NPSID -> Option: 15
-SMF Shell
-/opt/SmartMF/scripts/machines/update_backuphostname.sh NPSID
-SMF Table
-machines_history
-
-Reload all data (except columns)
-UI
-Main UI: 6 -> NPS UI: 2 -> Select NPSID -> Option: 16
 
 Reload data after SMF restart
 SMF appliance is providing DR (disaster-recover) / replication software components without any need to assign dedictaed storage only to SMF . Customer can use any storage type which is currently supported and connected to IBM Pure Data for Analytics (NFS, SAN, GPFS) for backup purposes – and SMF can use it as replication source. 
