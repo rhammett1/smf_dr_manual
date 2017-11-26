@@ -24,6 +24,6 @@ NOTE: During installation of SMF appliance access to YUM (update) server is requ
 <div id="smfinstall2"></div>
 <li> <h3>Setting up Secondary SMF node</h3></li>
 
-<br> To be written </br>
+<br> To be written
 </ol>
 
