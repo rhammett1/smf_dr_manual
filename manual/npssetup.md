@@ -21,12 +21,10 @@ NOTE: This option can be manually revoked by editing /etc/sudoers. SMF does not 
 
   </ul>
 
-  <li><b>Commands</b></li>
-  <ul>
-  <li>UI Commands</li>
-
-  Through UI (automatically opened when logged in as smartadm user): <br> <br>
-  <b>Menu Item 7 (NPS setup) -> Menu Item 3 (Add NPS)</b><br><br>
+  <li><b>To add NPS:</b></li>
+  <br><br>
+    <b>Menu Item 7 (NPS setup) -> Menu Item 3 (Add NPS)</b>
+  <br><br>
   
   The script asks for following details:
   <ul>
@@ -38,13 +36,8 @@ NOTE: This option can be manually revoked by editing /etc/sudoers. SMF does not 
  <br>NOTE: In case DR functionality is desired SMF provides feature to synchronize data between SMF nodes. As such preferable option is to have one SMF per data centre / shared storage group(s). 
  
      <li>In case SMF DR data Synchronization will be used – set up sufficient masters for each NPS</li> 
-  </ul><br>
-<li>SMF Shell</li>
-<ul> <li>Command line option uses the syntax as the UI. To launch NPS setup run: /opt/SmartMF/scripts/inits/setupnps.sh</li>
-  </ul>
 </ul>
-</ul>
- <li><h3>Updating NPS</h3></li>
+ <li><h3>Reloading NPS MetaData</h3></li>
  <ul>
   <li> <b>Concept</b></li>
   <ul>
@@ -52,14 +45,11 @@ NOTE: This option can be manually revoked by editing /etc/sudoers. SMF does not 
   <li>Each object type has its own unique object type id across all available Netezza appliances. </li>
   <li>Each SMF function reloads its requisite metadata on the respective NPS appliance.  </li>
   <li>Each function reloads scripts one NPS at a time (except columns metadata reload). The input attribute is internal appliance ID (further referenced as NPSID)</li>
-  <br> NOTE: Each script reloads its requisite metadata before running. Metadata reload options do not need to be invoked manually.
+  <br> NOTE: Each script reloads its requisite metadata before running. Metadata reload options do not need to be invoked manually. However, in the event that it is necessary to reload metadata manually:
    </ul>
    </ul>
-   </ul>
-<li><h3>Reloading SMF Metadata</h3></li> 
-<br> NPS metadata can be reloaded via the UI: 
 <br><br>Menu Item 6 (NPS Setup) -> Menu Item 2 (Reload NPS Metadata)
-
+<br><br>
 <p align="center">
 <img style="float: center;" src="/manual/images/edit_nps_menu.jpg">
 </p>
