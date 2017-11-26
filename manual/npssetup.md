@@ -7,49 +7,46 @@ title: NPS Setup/Management
 
 <ol> 
   <li><h3>Adding NPS</h3></li> 
-  <ul>
-  <li> <b>Concept</b></li>
+<b>Principles</b>
   <ul>
       <li>SMF does not store root/nz passwords anywhere. Root password is used only during setup.</li>
       <li>SMF creates users (shell and database) on every IBM Pure Data for Analytics (Netezza) appliance that it is connected to. </li>
       <li>Shell users do not have permissions to modify data in /nz directory. </li>
       <li>Shell users have mount/umount options granted. </li>
-  
+     <li>Smartadm database user has all administrative privileges. </li>
+</ul>
+<br>
 NOTE: This option can be manually revoked by editing /etc/sudoers. SMF does not have the option to read /etc/sudoers and as such    presence of this entry is not validated but is assumed present. During backup/restore option if RO (ready-Only) mode selection is set scripts will show errors and warning messages will appear in system logs.
-
-  <li>Smartadm database user has all administrative privileges. </li>
-
-  </ul>
-
-  <li><b>To add NPS:</b></li>
-  <br><br>
-    <b>Menu Item 7 (NPS setup) -> Menu Item 3 (Add NPS)</b>
-  <br><br>
-  
+<br>
+<br>
+<b>To add NPS:</b>
+<br>
+<br>
+<b>Menu Item 7 (NPS setup) -> Menu Item 3 (Add NPS)</b>
+<br>
+<br>
   The script asks for following details:
   <ul>
     <li>IP/FQDN – IP / FQDN of IBM PureData for Analytics Appliance  </li>
      <li>root password for currently active host </li>
      <li>Machine alias – it will be displayed for future reference (can be modified afterwards)</li>
      MIGR ID confirmation – if only one SMF host is present in data center confirm by enterting ‘y’
-  
+ </ul> 
  <br>NOTE: In case DR functionality is desired SMF provides feature to synchronize data between SMF nodes. As such preferable option is to have one SMF per data centre / shared storage group(s). 
- 
-     <li>In case SMF DR data Synchronization will be used – set up sufficient masters for each NPS</li> 
-</ul>
+ <br>In case SMF DR data Synchronization will be used – set up sufficient masters for each NPS
+ <div id="npssetup2"></div>
  <li><h3>Reloading NPS MetaData</h3></li>
- <ul>
-  <li> <b>Concept</b></li>
+<b>Principles</b>
   <ul>
-    <li>SMF stores all metadata in its internal database.</li>
+<li>SMF stores all metadata in its internal database.</li>
   <li>Each object type has its own unique object type id across all available Netezza appliances. </li>
   <li>Each SMF function reloads its requisite metadata on the respective NPS appliance.  </li>
   <li>Each function reloads scripts one NPS at a time (except columns metadata reload). The input attribute is internal appliance ID (further referenced as NPSID)</li>
+  </ul>
   <br> NOTE: Each script reloads its requisite metadata before running. Metadata reload options do not need to be invoked manually. However, in the event that it is necessary to reload metadata manually:
-   </ul>
-   </ul>
-<br><br>Menu Item 6 (NPS Setup) -> Menu Item 2 (Reload NPS Metadata)
-<br><br>
+<br>
+<br><b>Menu Item 6 (NPS Setup) -> Menu Item 2 (Reload NPS Metadata)</b>
+<br>
 <p align="center">
 <img style="float: center;" src="/manual/images/edit_nps_menu.jpg">
 </p>
