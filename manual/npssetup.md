@@ -45,27 +45,34 @@ NOTE: This option can be manually revoked by editing /etc/sudoers. SMF does not 
   </ul>
   <br> NOTE: Each script reloads its requisite metadata before running. Metadata reload options do not need to be invoked manually. However, in the event that it is necessary to reload metadata manually:
 <br>
-<br><b>Menu Item 6 (NPS Setup) -> Menu Item 2 (Reload NPS Metadata)</b>
+<br><b>Main Menu Item 6 (NPS Setup) -> Menu Item 2 (Edit NPS) </b>
+<br>
+<br>Then select NPS from List. The following menu provides 16 operations for the NPS you have selected:
+<br>
 <br>
 <p align="center">
 <img style="float: center;" src="/manual/images/edit_nps_menu.jpg">
 </p>
+<br>NOTE: Columns metadata reload differs from all other functions on this menu. To extract column information the metadata is pulled directly from the IBM Netezza database, so running menu option 16 (Reload All Data) excludes reloading of columns metadata.
+<br>
+<div id="npssetup3"></div>
+  <li><h3>Reloading Storage After SMF Restart</h3></li> 
+The SMF appliance provides DR (disaster-recovery / replication)  software components without any need to assign storage dedicated to SMF . The Customer can use any storage type which is currently supported and connected to IBM Netezza (NFS, SAN, GPFS) as a backup device,  and SMF can use it as replication source. 
+<br>  
+<br>To keep data in sync, increase replication stability and decrease storage utilisation SMF creates its own storage layout and mounts it accordingly to sync data. To  save infrastructure resources storage is not verified automatically (this can be adjusted). 
+<br>
+<br>In case of any reboot, after restarting SMF, to safely resume DR operations the following menu option needs to be invoked:
+<br>
+<br><b>Main Menu Item 6 (NPS Setup) -> Menu Item 4 (Reload DR storage)</b>
+<br>
+<br>
+<div id="npssetup4"></div>
+  <li><h3>Clearing Temporary Data</h3></li>
+SMF uses  temporary space to analyse IBM Netezza Appliance objects. In the event that an operation is interrupted temporary data may not be cleared and this would block metadata reload operations. This can be safely cleared if no other operation is running at the time.
+<br>
+<br><b>Main Menu: Item: 6 (NPS Setup) -> Menu Item 4 (Clear Temp Space)</b>
+<br>
+<br>CAUTION: Running the “Clear Temp Space” operation when another operation is running may lead to corrupted metadata.
+<br>
 <br>
 
-
-
-
-Reload data after SMF restart
-SMF appliance is providing DR (disaster-recover) / replication software components without any need to assign dedictaed storage only to SMF . Customer can use any storage type which is currently supported and connected to IBM Pure Data for Analytics (NFS, SAN, GPFS) for backup purposes – and SMF can use it as replication source. 
-To keep data in sync, increase replication stability and decrease storage utilisation– SMF is creating own storage layout and mount it accordingly to sync data – to save resources on infrastructure storage is not being verified automatically (this will be adjustable). 
-In case of any reboot, after restart of SMF  to safely resume DR operations – following needs to be invoked:
-UI
-Main UI: 6 -> NPS UI: 4
-SMF Shell
-/opt/SmartMF/scripts/inits/on_start_sync.sh
-
-Clearing temporary data
-SMF is using temp space to analyse IBM Pure Data for Analytics PPLIANCE objects. In case script were interrupted temporary data might not be cleared and block metadata reload operations. This can be safely cleared if no other operation is running at the time. 
-NOTE: In case any operation is running – at the time and you clear up temporary space – metadata might be will be invalidated. 
-UI
-Main UI: 6 -> NPS UI: 5
