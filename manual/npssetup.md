@@ -7,7 +7,7 @@ title: NPS Setup/Management
 
 <ol> 
   <li><h3>Adding NPS</h3></li> 
-<b>Principles</b>
+<b>Overview</b>
   <ul>
       <li>SMF does not store root/nz passwords anywhere. Root password is used only during setup.</li>
       <li>SMF creates users (shell and database) on every IBM Pure Data for Analytics (Netezza) appliance that it is connected to. </li>
@@ -22,7 +22,7 @@ NOTE: This option can be manually revoked by editing /etc/sudoers. SMF does not 
 <b>To add NPS:</b>
 <br>
 <br>
-<b>Menu Item 7 (NPS setup) -> Menu Item 3 (Add NPS)</b>
+<b>Main Menu Item 6 (NPS setup) -> Menu Item 3 (Add NPS)</b>
 <br>
 <br>
   The script asks for following details:
