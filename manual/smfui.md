@@ -35,7 +35,9 @@ title: SMF User Interface
 <li>Change metadata extraction frequency. </li>
 <li>Change number of metadata extraction attempts. </li>
 <li>Enable/disable temporary metadata deletion. </li>
-<li>Change UI monitoring refresh interval - this sets the number of seconds between screen refresh, which would otherwise be every second and can be distracting if there are no changes to report </li>
+<li>Change UI monitoring refresh interval - this sets the number of seconds between screen refresh, which would otherwise be every second and can be distracting if there are no changes to report.</li>
+<li>UI settings. Enable or disable menu options using this UI. </li>
+<li>System update. This would typically be disabled as it gives users the option to update the versions of multiple SMF environments </li>
 </ul>
 <br>
 

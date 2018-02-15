@@ -87,37 +87,47 @@ After sets are created, they must be run to initialize them. This will replicate
  <li>Run all initialized full DR sets </li>
  </ul>
  <br>
-  or added to the scheduler to be run automatically. 
+  or added to the scheduler to be run automatically. When run from the UI the mass DR tasks are sent to the background as they may take a considerable time to run. To see their progress either run DR monitoring, or they will appear on the screen as initialized DR sets on completion when returning to the top level menu.
 <br>
 
-<br>
 <br>
 <div id="drman6"></div>
 <li><b>Changing the Active Set Master</b></li>
 <br>
-<br>
-Text to be added
+To change the active set master is to fail the master over to another Netezza machine. This would typically be done when planning an outage on the host machine. 
 <br>
 <br>
 <div id="drman7"></div>
 <li><b>Checking DR Consistency</b></li>
 <br>
 <br>
-Text to be added
-<br>
 <br>
 <div id="drman8"></div>
-<li><b>Changing DR Settings</b></li>
+<li><b>Checking the integrity of the DR storage</b></li>
 <br>
-<br>
-Text to be added
+<br> This option runs diagnostics against the storage set up in all active DR sets. For each mount point the diagnostic script attempts to detect the storage device and displays its findings. For each DR set master/slave combination the storage device is confirmed, or in the event of not being able to detect the storage it will generate an error. 
 <br>
 <br>
 <div id="drman9"></div>
+<li><b>Changing DR Settings</b></li>
+<br>
+<p align="center">
+<img style="float: center;" src="/manual/images/drsettings.jpg">
+<br>
+</p>
+<br>
+There are 3 DR settings that allow for better load balancing:
+   <ul>
+   <li> Change max DR masters run - this setting allows you to set the maximum number of master DR jobs that can run in parallel. Setting this to 1 will force the system to run DR jobs serially </li>
+   <li> Change max DR jobs per master run - where multiple jobs are set up against a single DR master this setting allows you to control how many jobs the system will attempt to run in parallel against that master. This is to prevent processing bottlenecks. </li>
+   <li> Enable/disable view checking - as view checking does use system resources during DR this option allows you to enable or disable view checking as a default for when creating DR sets </li>
+   </ul>
+<br>
+<br>
+<div id="drman10"></div>
 <li><b>Blocking & Unblocking DR Sets</b></li>
 <br>
-<br>
-Text to be added
+<br>To prevent the scheduler from running individual or all DR sets, choose which sets you would like to block or unblock from this menu.
 <br>
 <br>
 

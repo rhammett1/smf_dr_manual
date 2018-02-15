@@ -1,4 +1,10 @@
+---
+layout: default
+title: Introduction
+---
+<div id="intro"></div>
 ## Introduction
+
 **Smart Management Framework (SMF)** has been specifically designed to automate processes that improve the performance, availability, recoverability, and security of one or more of IBM®’s Pure Data™ for Analytics (aka Netezza) appliances.
 It does this by providing parameterised and dynamically maintained metadata driven templates for the rapid implementation of best practise functionality in the following areas:
 * Database backup and replication management
@@ -14,8 +20,7 @@ It does this by providing parameterised and dynamically maintained metadata driv
 ## Backup/Replication Features
 * Works with any kind of storage media (including NFS, Spectrum Scale, SAN/NAS, etc.)
 * Bi-directional, multi-master in nature (from anywhere to anywhere, including multiple targets replicated from the same backup source, or the restoration target being on the same physical appliance as the backup source itself)
-* Backup/restore increments can be as frequent as you like (from minutes to days). Multiple different concurrent
-* backup sets supported per appliance Can backup/restore subsets of tables within a database (and even subsets of rows within a table)
+* Backup/restore increments can be as frequent as you like (from minutes to days). Multiple different concurrent  backup sets supported per appliance Can backup/restore subsets of tables within a database (and even subsets of rows within a table)
 * Ideal for Disaster Recovery, as well as Development/Test database population using sampled referentially intact subsets of production data
 
  <div id="ldapsync"></div>
@@ -27,8 +32,7 @@ It does this by providing parameterised and dynamically maintained metadata driv
  <div id="perftun"></div>
  
 ## Performance Tuning Features 
-* Automatically and regularly identifies relatively poorly performing query workloads based on configurable settings
-such as query frequency, queue time, latency, and throughput
+* Automatically and regularly identifies relatively poorly performing query workloads based on configurable settings such as query frequency, queue time, latency, and throughput
 * Extracts and parses execution plans of problem queries to  identify underlying causes of poor performance
 * Provides recommendations on how to resolve performance issues
 * Dynamically generates code to implement accepted recommendations
@@ -42,8 +46,7 @@ such as query frequency, queue time, latency, and throughput
 * Automatically rebuilds or drops views when the underlying base table’s schema changes or is dropped
 * Automatically re-synchronises column-level user/group permissions with LDAP master
 * Assists with the management and application of security levels, categories, and cohort security labels
-* Dynamically builds row secure tables, and applies security labels to their contents, based on parameter settings and
-configurable matching rules
+* Dynamically builds row secure tables, and applies security labels to their contents, based on parameter settings and configurable matching rules
 
  <div id="housek"></div>
  
