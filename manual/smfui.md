@@ -24,12 +24,10 @@ title: SMF User Interface
 <br>
 <ul>
 <li> Enable silent/verbose mode - toggle this setting to reduce the number of messages displayed on the screen during operations.</li>
-<li>Enable/disable dop broken views - toggle this setting for use when creating backup sets. If enabled, views will be dropped and their code saved if errors are encountered. If disabled, the backup will stop on encountering errors </li>
+<li>Enable/disable dop broken views - toggle this setting for use when creating DR and backup sets. If enabled, views will be dropped and their code saved if errors are encountered. If disabled, the backup will stop on encountering errors </li>
 <li>Change admin tasks probe interval - this sets the number of seconds between checking that there are admin tasks to run </li>
 <li>Change admin tasks probe timeout - this setting sets the number of retries (every second) before timing out </li>
-<li>Change max DR masters run - global setting to assist with load balancing and avoiding excessive CPU usage.</li>
-<li>Change max DR jobs per master Run - global setting to assist with load balancing and avoiding excessive CPU usage.</li>
-<li>Set backups by DB ID or by name - toggle switch </li>
+
 <li>Enable/disable view checking on DR. </li>
 <li>Enable/Disable stats collection for backup. </li>
 <li>Change metadata extraction frequency. </li>
