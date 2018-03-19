@@ -2,6 +2,7 @@
 layout: default
 title: SMF User Interface
 ---
+<h2><a href="/">Home</a></h2>
 <div id="smfui1"></div>
 ## SMF User Interface
 <ol>

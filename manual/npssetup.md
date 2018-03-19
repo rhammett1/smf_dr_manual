@@ -75,4 +75,5 @@ SMF uses  temporary space to analyse IBM Netezza Appliance objects. In the event
 <br>CAUTION: Running the “Clear Temp Space” operation when another operation is running may lead to corrupted metadata.
 <br>
 <br>
+</ol>
 
