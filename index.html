@@ -1,121 +1,29 @@
----
-layout: "default"
----
+
 <html>
+<!-- Text between angle brackets is an HTML tag and is not displayed.
+Most tags, such as the HTML and /HTML tags that surround the contents of
+a page, come in pairs; some tags, like HR, for a horizontal rule, stand 
+alone. Comments, such as the text you're reading, are not displayed when
+the Web page is shown. The information between the HEAD and /HEAD tags is 
+not displayed. The information between the BODY and /BODY tags is displayed.-->
+<head>
+<title>Enter a title, displayed at the top of the window.</title>
+</head>
+<!-- The information between the BODY and /BODY tags is displayed.-->
 <body>
-<h1>Smart Management Framework for Netezza</h1>
-<h2>User Manual</h2>
-<h4> <a href="/manual/intro">Introduction</a> </h4>	
+<h1>Enter the main heading, usually the same as the title.</h1>
+<p>Be <b>bold</b> in stating your key points. Put them in a list: </p>
 <ul>
-				<li> <a href="/manual/intro#backuprepfeat">Backup and Replication Features</a></li>
-				<li> <a href="/manual/intro#ldapsync">LDAP Synchronisation Features</a></li>
-				<li> <a href="/manual/intro#perftun">Performance Tuning Features</a></li>
-				<li> <a href="/manual/intro#advsec">Advanced Security Features</a></li>
-				<li> <a href="/manual/intro#housek">Housekeeping Features</a></li>
+<li>The first item in your list</li>
+<li>The second item; <i>italicize</i> key words</li>
 </ul>
-			<h4> <a href="/manual/smfinstall">SMF Installation</a> </h4>
-			<ul>
-				<li> <a href="/manual/smfinstall#smfinstall1">Setting up primary SMF node</a></li>
-				<li> <a href="/manual/smfinstall#smfinstall2">Setting up secondary SMF node</a></li>
-			</ul>
-			<h4> <a href="/manual/smfui#smfui1">SMF User Interface</a> </h4>
-			         <ul>
-				     <li> <a href="/manual/smfui#smfui1">Overview</a></li>
-				     <li> <a href="/manual/smfui#smfui2">System Setup</a></li>
-				     </ul>
-			<h4> <a href="/manual/npssetup">NPS Setup & Management</a> </h4>
-			<ul>
-				<li> <a href="/manual/npssetup#npssetup1">Adding NPS</a></li>
-				<li> <a href="/manual/npssetup#npssetup2">Reloading NPS Metadata</a></li>
-				<li> <a href="/manual/npssetup#npssetup3">Reloading Storage after SMF Restart</a></li>				
-				<li> <a href="/manual/npssetup#npssetup4">Clearing Temporary Data</a></li>
-			</ul>
-			<h4> <a href="/manual/drman">DR Management</a> </h4>
-			<ul>
-					<li> <a href="/manual/drman#drman1">Overview</a></li>
-					<li> <a href="/manual/drman#drman2">DR Monitoring</a></li>
-					<li> <a href="/manual/drman#drman3">Creating DR Sets</a></li>
-					<li> <a href="/manual/drman#drman4">Editing DR Sets </a></li>
-					<li> <a href="/manual/drman#drman5">Running DR Sets </a></li>
-					<li> <a href="/manual/drman#drman6">Changing the Active Set Master </a></li>
-					<li> <a href="/manual/drman#drman7">Checking DR Consistency</a></li>
-	                <li> <a href="/manual/drman#drman8">Checking Integrity of DR storage</a></li>
-					<li> <a href="/manual/drman#drman9">Changing DR Settings</a></li>
-					<li> <a href="/manual/drman#drman10">Blocking & Unblocking DR Sets</a></li>
-			</ul>
-			<h4> <a href="/manual/backup">Backup & Restore Management</a> </h4>
-			<ul>
-					<li> <a href="/manual/backup#backup1">Overview </a></li>
-					<li> <a href="/manual/backup#backup2">Backup Monitoring</a></li>
-					<li> <a href="/manual/backup#backup3">Running Backup Sets</a></li>
-					<li> <a href="/manual/backup#backup4">Creating Backup Sets </a></li>
-					<li> <a href="/manual/backup#backup5">Perform Restore Operation </a></li>
-					<li> <a href="/manual/backup#backup6">Edit Backup Set</a></li>
-					<li> <a href="/manual/backup#backup7">Changing Backup Settings</a></li>
-					<li> <a href="/manual/backup#backup8">Blocking & Unblocking Backup Sets</a></li>
-					<li> <a href="/manual/drman#backup9">Configure Backup Defaults</a></li>
-					<li> <a href="/manual/drman#backup10">Setup Backup Connectors</a></li>
-			</ul>
-			<h4> <a href="/manual/admintasks">Administrative Tasks</a> </h4>
-			<ul>
-				<li> <a href="/manual/admintasks#admintasks1">Overview</a></li>
-		        <li> <a href="/manual/admintasks#admintasks2">Manage administrative tasks</a></li>
-		        <li> <a href="/manual/admintasks#admintasks3">Run administrative tasks</a></li>
-			</ul>
-			<h4> <a href="/manual/migration">Data Migration</a> </h4>
-			<ul>
-				<li> <a href="/manual/migration#migration1">Overview </a></li>
-				<li> <a href="/manual/migration#migration2">Creating migration set </a></li>
-				<li> <a href="/manual/migration#migration3">Editing migration set</a></li>
-				<li> <a href="/manual/migration#migration4">Running migration set </a></li>
-			</ul>
-			<h4> <a href="/manual/adsync">Active Directory Synchronization</a> </h4>
-			<ul>
-				<li> <a href="/manual/adsync#adsync1">Overview </a></li>
-				<li> <a href="/manual/adsync#adsync2">Manage domains </a></li>
-				<li> <a href="/manual/adsync#adsync3">Manage LDAP groups search templates</a></li>
-				<li> <a href="/manual/adsync#adsync4">Manage LDAP group/NPS object matching templates </a></li>
-				<li> <a href="/manual/adsync#adsync5">Review group/user creation (exclusions)</a></li>
-				<li> <a href="/manual/adsync#adsync6">Manage permissions templates </a></li>
-				<li> <a href="/manual/adsync#adsync7">Run LDAP synchronization</a></li>
-				<li> <a href="/manual/adsync#adsync8">Setup LDAP NPS authorization </a></li>
-			</ul>
-			<h4> <a href="/manual/scheduler">Scheduler</a> </h4>
-			<ul>
-				<li> <a href="/manual/scheduler#scheduler1">Overview </a></li>
-				<li> <a href="/manual/scheduler#scheduler2">Scheduling tasks</a></li>
-				<li> <a href="/manual/scheduler#scheduler6">Unscheduling tasks</a></li>
-				<li> <a href="/manual/scheduler#scheduler7">Pausing scheduled tasks</a></li>
-			</ul>
-				<h4> <a href="/manual/secview">Secure View Management</a> </h4>
-			<ul>
-				<li> <a href="/manual/secview#secview1">Overview </a></li>
-				<li> <a href="/manual/secview#secview2">Manage secure view sets</a></li>
-				<li> <a href="/manual/secview#secview3">Run secure view generation</a></li>
-				<li> <a href="/manual/secview#secview4">Manage secure view metadata</a></li>										
-			</ul>
-			<h4> <a href="/manual/perfman">Performance Management</a> </h4>
-			<ul>
-				<li> <a href="/manual/perfman#perfman1">Overview </a></li>
-				<li> <a href="/manual/perfman#perfman2">Setup performance management tasks</a></li>
-				<li> <a href="/manual/perfman#perfman3">Running performance management tasks</a></li>
-				<li> <a href="/manual/perfman#perfman4">Performance data processing</a></li>
-				<li> <a href="/manual/perfman#perfman5">Query history extraction settings</a></li>
-				<li> <a href="/manual/perfman#perfman6">Group resource management</a></li>
-				<li> <a href="/manual/perfman#perfman7">Abusive users search</a></li>
-				<li> <a href="/manual/perfman#perfman8">Scheduler rules</a></li>
-			</ul>	
-			<h4> <a href="/manual/reporting">Reporting</a> </h4>
-			<ul>
-				<li> <a href="/manual/reporting#reporting1">Overview </a></li>
-			</ul>	
-				
-	</body>
-	</html>
-
-
-
-
-
-
-
+<p>Improve your image by including an image. </p>
+<p><img src="http://www.mygifs.com/CoverImage.gif" alt="A Great HTML Resource"></p>
+<p>Add a link to your favorite <a href="https://www.dummies.com/">Web site</a>.
+Break up your page with a horizontal rule or two. </p>
+<hr>
+<p>Finally, link to <a href="page2.html">another page</a> in your own Web site.</p>
+<!-- And add a copyright notice.-->
+<p>&#169; Wiley Publishing, 2011</p>
+</body>
+</html>
